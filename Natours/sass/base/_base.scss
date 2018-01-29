@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*setting the root font size*/
+/*using rem for the whole page*/
+/*auto scaling of font size*/
+html{
+  /*checking for the default browser font for the user*/
+  /*if there is no specification. default font size of browser is 16px*/
+  /*.625 * 16 = 10px;*/
+  font-size: 62.5%;
+}
+
+
+
+body{
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 3rem;
+  box-sizing: border-box;
+}
