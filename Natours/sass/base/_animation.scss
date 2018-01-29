@@ -1,3 +1,5 @@
+// keyframe used for the header
+// heading-primary--main
 @keyframes moveInLeft{
   0%{
     opacity: 0;
@@ -13,6 +15,7 @@
   }
 }
 
+// heading-primary--sub
 @keyframes moveInRight{
   0%{
     opacity: 0;
@@ -28,6 +31,7 @@
   }
 }
 
+// btn--animated that moves in from the bottom
 @keyframes moveInBottom {
   0%{
     opacity: 0;
