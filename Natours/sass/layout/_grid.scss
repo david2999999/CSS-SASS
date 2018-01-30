@@ -13,9 +13,6 @@
   // select all of the classes that starts with the value "col-"
   // if you use $=, it means everything that ends with "col-"
   [class^="col-"]{
-    background-color: orangered;
-    color: #fff;
-    font-size: 20px;
     float: left;
 
     // create a margin right to all of the element except the last one
