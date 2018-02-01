@@ -1,6 +1,7 @@
 .btn{
 
   // this creates the appearance of the button
+  &,
   &:link,
   &:visited{
     text-transform: uppercase;
@@ -11,6 +12,9 @@
     transition: all .2s;
     position: relative;
     font-size: $default-font-size;
+
+    border: none;
+    cursor: pointer;
   }
 
   // when the button is hovered, the button shifts up
@@ -28,7 +32,9 @@
 
   // when it is active, the button shifts down a little
   // the box shadow also decreases
-  &:active{
+  &:active,
+  &:focus{
+    outline:none;
     transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba($color-black,.2);
   }
