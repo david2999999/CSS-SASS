@@ -2,10 +2,20 @@
   max-width: $grid-width;
   margin:0 auto;
 
+  @include respond(tab-port){
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
   // all of the elements except the last child gets a margin bottom
   // this means the last row does not have a margin bottom
   &:not(:last-child){
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port){
+      margin-bottom: $gutter-vertical-small;
+    }
+
   }
 
   @include clearfix;
@@ -15,9 +25,17 @@
   [class^="col-"]{
     float: left;
 
+    @include respond(tab-port){
+      width: 100% !important;
+    }
     // create a margin right to all of the element except the last one
     &:not(:last-child){
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port){
+        margin-right: 0px;
+        margin-bottom: $gutter-vertical-small;
+      }
     }
   }
   
