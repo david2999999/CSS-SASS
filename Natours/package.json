@@ -4,12 +4,16 @@
   "description": "Landing Page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css" : "concat -o css/style.concat.css css/icon-font.css css/style.comp.css"
   },
   "author": "David Jiang",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "concat": "^1.0.3"
+  }
 }

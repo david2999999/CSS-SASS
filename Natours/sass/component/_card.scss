@@ -17,6 +17,8 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     // hides the back part of an element
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 
     &--front{

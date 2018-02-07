@@ -1,6 +1,6 @@
 *,
-*::after,
-*::before{
+*::before,
+*::after{
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -41,6 +41,6 @@ body{
   padding: 3rem;
 
   @include respond(tab-port) {
-    padding: 0px;
+    padding: 0;
   }
 }
