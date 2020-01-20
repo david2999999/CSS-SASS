@@ -1,6 +1,7 @@
 $color-primary: #f9ed69;
 $color-secondary: #f08a5d;
 $color-tertiary: #b83b5e;
+$color-text-dark: #333;
 
 * {
   margin: 0;
@@ -21,6 +22,12 @@ nav {
 
     &:first-child {
       margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-dark;
     }
   }
 }
