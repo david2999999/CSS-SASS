@@ -14,6 +14,12 @@ $width-button: 150px;
   }
 }
 
+@mixin style-link-text($color) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,9 +44,7 @@ nav {
     }
 
     a:link {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $color-text-dark;
+      @include style-link-text($color-text-dark);
     }
   }
 }
@@ -55,10 +59,8 @@ nav {
   display: inline-block;
   text-align: center;
   border-radius: 100px;
-  text-decoration: none;
-  text-transform: uppercase;
   width: $width-button;
-  color: $color-text-light;
+  @include style-link-text($color-text-light);
 }
 
 .btn-main {
