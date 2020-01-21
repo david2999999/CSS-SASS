@@ -57,8 +57,7 @@ nav {
   float: right;
 }
 
-.btn-main:link,
-.btn-hot:link {
+%btn-placeholder {
   padding: 10px;
   display: inline-block;
   text-align: center;
@@ -69,6 +68,7 @@ nav {
 
 .btn-main {
   &:link {
+    @extend %btn-placeholder;
     background-color: $color-secondary;
   }
 
@@ -79,6 +79,7 @@ nav {
 
 .btn-hot {
   &:link {
+    @extend %btn-placeholder;
     background-color: $color-tertiary;
   }
 
