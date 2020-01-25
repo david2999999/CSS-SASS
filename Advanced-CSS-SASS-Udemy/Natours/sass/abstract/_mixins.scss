@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ""; // display but not show
+    display: table;
+    clear: both; // clears float left and float right
+  }
+}
