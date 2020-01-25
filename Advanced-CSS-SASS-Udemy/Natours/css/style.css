@@ -66,6 +66,11 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
 
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
