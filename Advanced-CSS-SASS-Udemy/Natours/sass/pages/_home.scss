@@ -11,4 +11,11 @@
                   rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.81)),
   url("../img/nat-4.jpg");
   background-size: cover;
+
+  transform: skewY(-7deg);
+
+  // selects all of the direct childs
+  & > * {
+    transform: skewY(7deg);
+  }
 }
