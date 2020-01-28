@@ -17,7 +17,7 @@
     box-shadow: 0 1.5rem 40px rgba($color-black, .15);
 
     &--front {
-      background-color: $color-white;
+
     }
 
     &--back {
@@ -35,6 +35,23 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+
+    &--1 {
+      background-image: url("../img/nat-5.jpg");
+    }
+
+    &--2 {
+      background-image: url("../img/nat-6.jpg");
+    }
+
+    &--3 {
+      background-image: url("../img/nat-7.jpg");
+    }
   }
 }
 
